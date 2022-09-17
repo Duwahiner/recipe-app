@@ -1,5 +1,5 @@
 export interface ThemeApp {
-  breakpointsApp: string[];
+  breakpoints: Breakpoints;
   colors: Colors;
   fonts: Fonts;
   viewport: Viewport;
@@ -8,6 +8,13 @@ export interface ThemeApp {
   fontWeights: FontWeights;
   borderRadius: BorderRadius;
   boxShadow: BoxShadow;
+}
+
+export interface Breakpoints {
+  xs: string;
+  sm: string;
+  md: string;
+  lg: string;
 }
 
 export interface Colors {

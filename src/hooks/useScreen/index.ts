@@ -10,9 +10,7 @@ import {
 export const useScreen = (init = 1200) => {
   const [width, setWidth] = useState<number>(init);
   const [device, setDevice] = useState<CurrentDevice>(CurrentDeviceEnum.Phones);
-  const [breakpoint, setBreakpoint] = useState<CurrentBreakpoint>(
-    CurrentBreakpointEnum.Xs
-  );
+  const [breakpoint, setBreakpoint] = useState<CurrentBreakpoint>(CurrentBreakpointEnum.Xs);
 
   const currentNumberBreakpoint: CurrentNumberBreakpoint = {
     xs: 576,
@@ -41,12 +39,9 @@ export const useScreen = (init = 1200) => {
     if (width <= 576) setDevice(CurrentDeviceEnum.Phones);
     else if (width > 576 && width <= 992) setDevice(CurrentDeviceEnum.Tablets);
     else if (width > 992) setDevice(CurrentDeviceEnum.Desktops);
-
     if (width <= 576) setBreakpoint(CurrentBreakpointEnum.Xs);
-    else if (width > 576 && width <= 768)
-      setBreakpoint(CurrentBreakpointEnum.Sm);
-    else if (width > 768 && width <= 992)
-      setBreakpoint(CurrentBreakpointEnum.Md);
+    else if (width > 576 && width <= 768) setBreakpoint(CurrentBreakpointEnum.Sm);
+    else if (width > 768 && width <= 992) setBreakpoint(CurrentBreakpointEnum.Md);
     else if (width > 1200) setBreakpoint(CurrentBreakpointEnum.Lg);
   }, [width, setDevice, setBreakpoint]);
 

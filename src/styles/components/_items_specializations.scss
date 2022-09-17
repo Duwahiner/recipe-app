@@ -1,0 +1,22 @@
+.items-specializations-wrapper-flex-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  
+  .items-specializations-title {
+    color: $prymary;
+    font-family: $font-monster-clubhouse;
+    font-weight: $font-Weights-400;
+    font-size: 1.06rem;
+    margin-top: $mt-3;
+  }
+
+  .items-specializations-count {
+    color: $secondary;
+    font-family: $font-poppins;
+    font-weight: $font-Weights-400;
+    font-size: 0.938rem;
+    margin-top: -$mt-5;
+  }
+}

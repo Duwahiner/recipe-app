@@ -1,7 +1,12 @@
 import { ThemeApp } from 'types/theme';
 
 export const themeApp: ThemeApp = {
-  breakpointsApp: ['576px', '768px', '992px', '1200px'],
+  breakpoints: {
+    xs: '576px',
+    sm: '768px',
+    md: '992px',
+    lg: '1200px',
+  },
 
   colors: {
     prymary: '#D84A4A',
@@ -17,10 +22,8 @@ export const themeApp: ThemeApp = {
     favorite100: '#FC8E56',
     favorite200: '#FEC368',
     black: '#000000',
-    bgCards:
-      'transparent linear-gradient(180deg, #E9F1FA 0%, #FFFFFF 100%) 0% 0% no-repeat padding-box',
-    bgFooter:
-      'transparent linear-gradient(180deg, #C2E3F3 0%, #6AA3C1 100%) 0% 0% no-repeat padding-box',
+    bgCards: 'transparent linear-gradient(180deg, #E9F1FA 0%, #FFFFFF 100%) 0% 0% no-repeat padding-box',
+    bgFooter: 'transparent linear-gradient(180deg, #C2E3F3 0%, #6AA3C1 100%) 0% 0% no-repeat padding-box',
   },
 
   fonts: {
@@ -34,7 +37,8 @@ export const themeApp: ThemeApp = {
   },
 
   fontSizes: [0.7, 1, 2, 5, 8, 10],
-  space: [5, 10, 15, 20, 30, 40],
+  space: [5, 10, 15, 20, 30, 40, 50, 60, 70, 80, 90, 100],
+
   fontWeights: {
     fontWeight200: 200,
     fontWeight400: 400,
