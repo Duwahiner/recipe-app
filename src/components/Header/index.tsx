@@ -1,29 +1,50 @@
+import { useTheme } from '@emotion/react';
+import { Link } from 'react-router-dom';
 import styled from '@emotion/styled';
 
 import { ContainerFullWidth } from 'components/ContainerFullWidth';
+import { CurrentBanner } from 'components/CurrentBanner';
+import { HomeIcon } from 'components/Icons';
 import { Logo } from 'components/Logo';
+import { Menu } from 'components/Menu';
+import { MenuFloat } from 'components/MenuFloat';
 import { WrapperFlex } from 'components/WrapperFlex';
-import { ThemeProps } from 'types/components';
+import { ThemeApp } from 'types/theme';
 
-interface ContainerProps extends ThemeProps {}
-
-const Container = styled(ContainerFullWidth)<ContainerProps>`
-  height: 50px;
-  background-color: ${props => `${props.theme.colors.bgPrymary100}`};
-`;
+const Container = styled.div``;
+const ContainerBanner = styled.div``;
 
 export const Header: React.FC = () => {
+  const theme = useTheme() as ThemeApp;
+
   return (
     <Container>
-      <WrapperFlex>
-        <WrapperFlex>
-          <Logo />
-        </WrapperFlex>
+      <WrapperFlex className='header-wrapper-flex'>
+        <ContainerFullWidth className='header-container-full-width'>
+          <WrapperFlex>
+            <Logo />
+          </WrapperFlex>
 
-        <WrapperFlex>
-          <h2> menu </h2>
-        </WrapperFlex>
+          <WrapperFlex className='header-wrapper-flex-nenu-container'>
+            <div className='header-menu-container'>
+              <Menu />
+            </div>
+            <div className='header-icon-home-container'>
+              <Link to='/'>
+                <HomeIcon color={theme.colors.prymary} size='25px' />
+              </Link>
+            </div>
+          </WrapperFlex>
+        </ContainerFullWidth>
       </WrapperFlex>
+
+      <ContainerBanner>
+        <CurrentBanner />
+      </ContainerBanner>
+
+      <ContainerFullWidth className='header-container-full-width-menu-float'>
+        <MenuFloat />
+      </ContainerFullWidth>
     </Container>
   );
 };

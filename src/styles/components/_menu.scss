@@ -1,0 +1,35 @@
+.menu-wrapper-flex-container {
+  align-items: center;
+
+  .menu-link {
+    text-decoration: none;
+
+    .menu-link-items {
+      color: $bg-prymary-100;
+      font-size: 0.813rem;
+      color: $secondary;
+      font-family: $font-poppins;
+      font-weight: $font-Weights-500;
+      transition: all 0.3s;
+      &:hover {
+        color: $prymary;
+      }
+    }
+
+    .menu-link-items-active {
+      color: $prymary;
+    }
+  }
+
+  .menu-link-margin {
+    margin-left: $margin-left-menu;
+
+    @media (max-width: $breakpoints-sm) {
+      margin-left: $ml-18;
+    }
+
+    @media (max-width: $breakpoints-md) {
+      margin-left: $ml-20;
+    }
+  }
+}

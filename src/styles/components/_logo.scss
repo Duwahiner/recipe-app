@@ -1,0 +1,20 @@
+.logo-wrapper-flex-container {
+  .logo-link {
+    margin: $margin-0;
+    text-decoration: none;
+
+    .logo-link-items-1 {
+      font-size: 2.5rem;
+      color: $secondary;
+      font-family: $font-monster-clubhouse;
+    }
+
+    .logo-link-items-2 {
+      font-size: 1.88rem;
+      color: $prymary;
+      font-family: $font-poppins;
+      font-weight: $font-Weights-400;
+      margin-left: -$ml-10;
+    }
+  }
+}

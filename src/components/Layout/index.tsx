@@ -16,7 +16,7 @@ export const Layout: React.FC<LayoutProps> = ({ children }) => {
         <Header />
       </ContentHeader>
 
-      <ContentMain>
+      <ContentMain className='layout-main-container'>
         <ContainerFullWidth>{children}</ContainerFullWidth>
       </ContentMain>
 
