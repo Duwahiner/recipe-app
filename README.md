@@ -15,7 +15,7 @@
 ## Una vez haya instalado las dependencias del proyecto, ejecúte:
     -->> npm start
 
-    Abra el navegador y escriba: http://localhost:3000
+    Diríjase al navegador y escriba: http://localhost:3000
 
 ## Despliegue a producción.
     -->> npm run build
