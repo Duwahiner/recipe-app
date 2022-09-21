@@ -58,6 +58,10 @@
       height: 370px;
     }
 
+    @media (max-width: $breakpoints-lg) {
+      height: 420px;
+    }
+
     @media (min-width: $breakpoints-lg) {
       display: flex;
       justify-content: center;
