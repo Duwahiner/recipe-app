@@ -15,7 +15,6 @@ $black: #000000;
 $bg-cards: transparent linear-gradient(180deg, #E9F1FA 0%, #FFFFFF 100%) 0% 0% no-repeat padding-box;
 $bg-cards-hover: transparent linear-gradient(180deg, #C2E3F3 0%, #FFFFFF 100%) 0% 0% no-repeat padding-box;
 $bg-footer: transparent linear-gradient(180deg, #C2E3F3 0%, #6AA3C1 100%) 0% 0% no-repeat padding-box;
-$bg-banner-img: '../../assets/images/bcq.jpg';
 
 // Fonst family
 $font-monster-clubhouse: MonsterClubhouse;
@@ -136,6 +135,7 @@ $spacing-100: 100;
 
 //Box shadow.
 $box-shadow: 0px 5px 9px #8395A766;
+$box-shadow-2: 0px 3px 5px #8395A766;
 
 // Border radius
 $border-radius-3: 3px;

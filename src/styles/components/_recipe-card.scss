@@ -14,10 +14,16 @@
   }
   
   .recipe-card-item-card-container {
-    max-width: 164px;
-    max-height: 158px;
+    width: 150px;
+    height: 150px;
+    background-color: $bg-prymary-200;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     position: absolute;
-    top: -9px;
+    overflow: hidden;
+    border-radius: 50%;
+    box-shadow: $box-shadow-2;
 
     @media (max-width: $breakpoints-xs) {
       width: 111px;
@@ -42,7 +48,7 @@
     border-radius: $border-radius-10;
     background: $bg-cards;
     box-shadow: $box-shadow;
-    transition: all 0.3s;
+    transition: all 0.7s;
     opacity: 1;
 
     @media (max-width: $breakpoints-xs) {
@@ -67,6 +73,7 @@
     }
 
     .recipe-card-card-contents-title-container {
+      width: 90%;
       height: 43px;
       margin-top: 105px;
       display: flex;
@@ -77,6 +84,12 @@
       transition-delay: 0.3s;
       opacity: 1;
 
+      .current-banner-subtitle {
+          white-space: nowrap;
+          overflow: hidden;
+          text-overflow: ellipsis;
+      }
+
       @media (max-width: $breakpoints-xs) {
         margin-top: 65px;
       }
@@ -86,7 +99,7 @@
         font-size: 1.9rem;
         margin: $margin-0;
         line-height: 43px;
-
+      
         @media (max-width: $breakpoints-xs) {
           font-size: 1.25rem;
           line-height: 30px;
@@ -96,6 +109,9 @@
           font-family: $font-poppins;
           font-weight: $font-Weights-400;
           margin-right: $mr-5;
+          white-space: nowrap;
+          overflow: hidden;
+          text-overflow: ellipsis;
         }
 
         &:nth-child(2) {
@@ -117,7 +133,7 @@
       margin-bottom: 13px;
       padding: 0 $margin-18;
       box-sizing: border-box;
-      transition: all 0.5s;
+      transition: all 0s;
       opacity: 1;
 
       @media (max-width: $breakpoints-xs) {

@@ -1,8 +1,6 @@
 .current-banner-wrapper-flex-container {
   width: $screen-width;
   height: 53vh;
-  background: url($bg-banner-img) no-repeat center center; 
-  background-size: cover;
   background-color: $bg-prymary-200;
   align-items: center;
   overflow: hidden;
@@ -23,7 +21,7 @@
       animation-direction: normal;
       animation-fill-mode: forwards;
       animation-timing-function: ease-out;
-
+      
       @media (max-width: $breakpoints-xs) {
         font-size: 3.1rem;
       }

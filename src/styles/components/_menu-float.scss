@@ -25,9 +25,17 @@
       }
       
       .menu-float-link-items {
-        color: $bg-prymary-100;
         font-size: 0.813rem;
         color: $secondary;
+        font-family: $font-poppins;
+        font-weight: $font-Weights-500;
+        transition: all 0.3s;
+        line-height: 19px;
+      }
+
+      .menu-float-link-items-active {
+        font-size: 0.813rem;
+        color: $prymary;
         font-family: $font-poppins;
         font-weight: $font-Weights-500;
         transition: all 0.3s;
