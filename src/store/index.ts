@@ -1,11 +1,18 @@
 import { configureStore } from '@reduxjs/toolkit';
 
-import couters from './reducers/couters';
+import menu from './reducers/menu';
+import menuFloat from './reducers/menuFloat';
+import headerState from './reducers/headerState';
+import recipes from './reducers/recipes';
+
 import { saveState, loadState } from './localStorage';
 
 const store = configureStore({
   reducer: {
-    couters,
+    menu,
+    menuFloat,
+    headerState,
+    recipes,
   },
   preloadedState: loadState(),
 });

@@ -1,9 +1,10 @@
 import axios from 'axios';
 
-const api = () => {
-  return axios.create({
-    baseURL: 'https://jsonplaceholder.typicode.com/',
-  });
-};
+const conigApi = axios.create({
+  baseURL: process.env.REACT_APP_URL_BASE,
+  headers: {
+    'Content-Type': 'application/json',
+  },
+});
 
-export default api;
+export default conigApi;
