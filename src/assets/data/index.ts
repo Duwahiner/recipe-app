@@ -75,7 +75,7 @@ export const dataMenuFloat: DataMenuFloat[] = [
     src: cakeIcon,
   },
   {
-    name: 'Comida Rápida',
+    name: 'Rápida',
     link: '/comida-rapida',
     active: false,
     subMenu: false,
