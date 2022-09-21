@@ -18,9 +18,21 @@
     "resolveJsonModule": true,
     "isolatedModules": true,
     "noEmit": true,
-    "jsx": "react-jsx"
+    "jsx": "react-jsx",
+    "baseUrl": "src",
+    "paths": {
+      "pages": ["pages/"],
+      "components": ["components/"],
+      "types": ["types/"],
+      "store": ["store/"],
+      "services": ["services/"],
+      "theme": ["theme/"],
+      "hooks": ["hooks/"],
+      "assets": ["assets/"],
+      "styles": ["styles/"],
+      "utils": ["utils/"],
+    }
   },
-  "include": [
-    "src"
-  ]
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", "types/*.d.ts"],
+  "exclude": ["node_modules"]
 }

@@ -1,0 +1,103 @@
+.current-banner-wrapper-flex-container {
+  width: $screen-width;
+  height: 53vh;
+  background-color: $bg-prymary-200;
+  align-items: center;
+  overflow: hidden;
+
+  .current-banner-container-title {
+    margin-left: 20%;
+ 
+    .current-banner-title {
+      color: $bg-prymary-100;
+      font-size: 4.7rem;
+      font-family: $font-poppins;
+      font-weight: $font-Weights-400;
+      margin: 0px;
+      transform: translatey(-250px);
+      opacity: 0;
+      animation-duration: 1s;
+      animation-name: titleTop;
+      animation-direction: normal;
+      animation-fill-mode: forwards;
+      animation-timing-function: ease-out;
+      
+      @media (max-width: $breakpoints-xs) {
+        font-size: 3.1rem;
+      }
+
+      @media (max-width: $breakpoints-sm) {
+        text-shadow: rgba(0, 0, 0, 0.3) 0.05em 0em 0.05em
+      }
+    }
+  
+    .current-banner-subtitle {
+      color: $bg-prymary-100;
+      font-size: $font-size-title;
+      font-family: $font-monster-clubhouse;
+      font-weight: $font-Weights-400;
+      margin: 0px;
+      margin-top: -50px;
+      transform: translatey(250px);
+      opacity: 0;
+      animation-duration: 1s;
+      animation-name: titleBottom;
+      animation-direction: normal;
+      animation-fill-mode: forwards;
+      animation-timing-function: ease-out;
+
+      @media (max-width: $breakpoints-xs) {
+        font-size: 3.1rem;
+        margin-top: -35px;
+      }
+
+      @media (max-width: $breakpoints-sm) {
+        text-shadow: rgba(0, 0, 0, 0.3) 0.05em 0em 0.05em
+      }
+    }
+
+    @media (max-width: $breakpoints-sm) {
+      margin-left: 15.5%;
+    }
+
+    @media (max-width: $breakpoints-xs) {
+      margin-left: 13.5%;
+    }
+  }
+
+  @media (max-width: $breakpoints-sm) {
+    height: 47vh;
+  }
+
+  @media (max-width: $breakpoints-xs) {
+    height: 39vh;
+  }
+
+  @media (min-width: $breakpoints-lg) {
+    height: 67vh;
+  }
+
+  @keyframes titleTop {
+    0% {
+      transform: translatey(-250px);
+      opacity: 0;
+     }
+   
+    100% {
+      transform: translatey(0px);
+      opacity: 1;
+     }
+  }
+
+  @keyframes titleBottom {
+    0% {
+      transform: translatey(250px);
+      opacity: 0;
+     }
+   
+    100% {
+      transform: translatey(0px);
+      opacity: 1;
+     }
+  }
+}

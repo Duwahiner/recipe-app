@@ -1,0 +1,21 @@
+// UI Settings
+@import './settings/settings';
+
+// Styles globals
+@import './globals/globals';
+@import './globals/fonts';
+
+// Components
+@import './components/header';
+@import './components/logo';
+@import './components/menu';
+@import './components/menu-float';
+@import './components/current-banner';
+@import './components/footer';
+@import './components/layout';
+@import './components/current-recipes';
+@import './components/recipe-card';
+@import './components/items-specializations';
+@import './components/nfound';
+
+// Screens

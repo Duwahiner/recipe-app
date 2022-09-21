@@ -1,0 +1,68 @@
+.menu-float-wrapper-flex-container {
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+
+  .menu-float-link {
+    text-decoration: none;
+    margin: 8px 0.8%;
+
+    .menu-float-items-card-container {
+      width: 106px;
+      height: 85px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      border-radius: $border-radius-10;
+      background: $bg-cards;
+      box-shadow: $box-shadow;
+      transition: all 0.7s ease-in-out;
+
+      &:hover {
+        background: $bg-prymary-200;
+        box-shadow: none;
+      }
+      
+      .menu-float-link-items {
+        font-size: 0.813rem;
+        color: $secondary;
+        font-family: $font-poppins;
+        font-weight: $font-Weights-500;
+        transition: all 0.3s;
+        line-height: 19px;
+      }
+
+      .menu-float-link-items-active {
+        font-size: 0.813rem;
+        color: $prymary;
+        font-family: $font-poppins;
+        font-weight: $font-Weights-500;
+        transition: all 0.3s;
+        line-height: 19px;
+      }
+
+      .menu-float-container-icons {
+        display: flex;
+        height: 42px;
+        align-items: center;
+      }
+  
+      span {
+        display: flex;
+      }
+
+      span:nth-child(2) {
+        margin-top: $mt-3;
+      }
+  
+      .menu-float-link-margin {
+        margin-left: $margin-left-menu;
+      }
+    }
+
+    @media (max-width: $breakpoints-xs) {
+      margin: 8px 2%;
+    }
+  }
+}

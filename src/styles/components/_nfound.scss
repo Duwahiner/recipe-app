@@ -1,0 +1,40 @@
+.nfound-wrapper-flex-container {
+  width: 100%;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  .n-found-title {
+    color: $black;
+    font-size: 1.3rem;
+    font-family: $font-poppins;
+    font-weight: $font-Weights-600;
+    margin: 0px;
+    padding-bottom: $mb-20;
+
+    @media (max-width: $breakpoints-xs) {
+      font-size: 1rem;
+    }
+  }
+
+  .nfound-img {
+    width: 250px;
+    max-width: 100%;
+    height: auto;
+  }
+
+  .nfound-button {
+    background-color: transparent;
+    border: solid 1px $black;
+    padding: $margin-8 $margin-40;
+    margin-top: $mt-20;
+    border-radius: $border-radius-3;
+    transition: all 0.3s;
+    cursor: pointer;
+
+    &:hover {
+      color: $bg-prymary-100;
+      background-color: $black;
+    }
+  }
+}

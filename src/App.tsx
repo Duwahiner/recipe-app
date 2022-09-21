@@ -1,26 +1,35 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import styled from '@emotion/styled';
+import { Routes, Route } from 'react-router-dom';
 
-function App() {
+import Home from 'pages/Home';
+import Vegetarians from 'pages/Vegetarians';
+import MainCourses from 'pages/MainCourses';
+import Cakes from 'pages/Cakes';
+import FastFood from 'pages/FastFood';
+import KidsMenu from 'pages/KidsMenu';
+import Soups from 'pages/Soups';
+import ContainersApp from 'ContainersApp';
+import NotFound from 'pages/NotFound';
+
+const Container = styled.div``;
+
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <ContainersApp>
+      <Container>
+        <Routes>
+          <Route path='/' element={<Home />} />
+          <Route path='/vegetarianos' element={<Vegetarians />} />
+          <Route path='/platos-principales' element={<MainCourses />} />
+          <Route path='/tortas' element={<Cakes />} />
+          <Route path='/comida-rapida' element={<FastFood />} />
+          <Route path='/menu-ninos' element={<KidsMenu />} />
+          <Route path='/sopas' element={<Soups />} />
+          <Route path='*' element={<NotFound />} />
+        </Routes>
+      </Container>
+    </ContainersApp>
   );
-}
+};
 
 export default App;

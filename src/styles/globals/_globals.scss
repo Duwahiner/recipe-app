@@ -1,0 +1,28 @@
+
+* {
+  font-family: Poppins, Helvetica, sans-serif, Arial;
+  font-weight: 400;
+  color: $black;
+}
+
+html {
+  line-height: normal;
+}
+
+body {
+  background-color: transparent;
+
+  &::-webkit-scrollbar {
+    display: none;
+    background: $bg-cards;
+    width: 6px;
+  }
+  &::-webkit-scrollbar-thumb {
+    background: transparent;
+    border-radius: 0px;
+  }
+  &::-webkit-scrollbar-thumb:hover{
+    background: $bg-footer;
+  }
+
+}
